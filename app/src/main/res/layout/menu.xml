@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/aplicativo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Djonys Dalmy de Oliveira"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:textSize="24dp"
+        android:id="@+id/textname"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="app.ibrep@gmail.com"
+        android:layout_gravity="center"
+        android:textSize="12dp"
+        android:textColor="@color/browser_actions_text_color"
+        android:id="@+id/textemail"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:textColor="@color/white"
+        android:text="Mudar o nome"
+        android:backgroundTint="@color/colorAccent"
+        android:id="@+id/changename"/>
+
+    <!--<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Apagar histórico"
+        android:backgroundTint="@color/colorAccent"
+        android:id="@+id/apagar"/>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Sair"
+        android:backgroundTint="@color/red"
+        android:id="@+id/sair"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:text="1.2.2"
+        android:id="@+id/manager"
+        android:layout_gravity="center"
+        android:textSize="12dp"
+        android:textColor="@color/browser_actions_text_color" />
+
+
+
+    <include layout="@layout/bottom_nav" />
+
+</LinearLayout>

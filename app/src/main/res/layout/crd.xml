@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:fillViewport="true">
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context=".Pages.CRD">
+
+            <!--<android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark" />-->
+
+            <Switch
+                android:id="@+id/CCCswitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CCC"
+                android:textOff="Off"
+                android:textOn="On"
+                android:checked="false" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/Nomelaycrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:hint="Nome*"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Nomecrd" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Emaillaycrd">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Email*"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Emailcrd" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/NomeAlunolaycrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:hint="Nome do aluno*"
+                    android:inputType="textPersonName"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/NomeAlunocrd" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/NumeroMatriculalaycrd">
+                <EditText
+                    android:id="@+id/NumeroMatriculacrd"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:layout_height="wrap_content"
+                    android:hint="N° Matricula*"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SelectedValorlaycrd">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Valor R$*"
+                    android:inputType="numberDecimal"
+                    android:layout_height="match_parent"
+                    android:id="@+id/SelectedValorcrd" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SelectedDatelaycrd">
+                <EditText
+                    android:id="@+id/SelectedDatecrd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="Data do depósito*"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/imgViewcrd"
+                android:src="@drawable/ph_add_image" />
+
+        </TableLayout>
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buttonSendcrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_dialog_email" />
+</RelativeLayout>
